@@ -1,3 +1,5 @@
+/* Universal Body Styles   */
+
 body{
   font-family: Helvetica;
   font-size: 22px;
@@ -9,18 +11,122 @@ body{
 }
 
 header{
-  position: fixed;
-  height: 69px;
-  border-bottom: 1px solid seashell;
-  margin-left: 10px;
   display: flex;
+  height: 69px;
+  width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid seashell;
   justify-content: space-between;
+  align-items: center;
+  z-index: 5;
 }
 
-header div img{
-  height: 50px;
+
+  /*or header figure{float: left;}
+  or position: fixed;  left: 10px; instead of the above  */
+
+
+header figure img{
+  height: 50px
+
 }
 nav{
   display: inline-flex;
+  align-items: center;
+  text-decoration: underline;
+}
 
+    /*  or float: right; instead of the above */
+}
+
+header nav span{
+  margin: 10px;
+}
+/* Universal Section Styles  */
+
+
+
+/*  Our Mision Section Styles  */
+#mission{
+display: flex;
+  height: 700px;
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-mission-background.jpg");
+
+  }
+
+
+
+.mission-content{
+  display: flex;
+flex-direction: column;
+  background-color: black;
+  width: 1200px;
+align-self: center;
+}
+
+/*  Tea of the month Section Styles  */
+
+#tea-of-the-month{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.teatypes{
+  display: flex;
+  width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+
+.teatypes figure img{
+  height: 200px;
+  width: 300px;
+}
+
+.teatypes figure figcaption{
+  width: 300px;
+}
+
+/*  Locations Section Styles  */
+
+#location{
+  height: 500px;
+  width: 1200px;
+  margin: 0 auto;
+  background-image: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-4/img-locations-background.jpg");
+  background-repeat: no-repeat;
+}
+
+#location .addresses{
+  margin: 0 auto;
+}
+
+#location .addresses div{
+  height: 300px;
+  width: 300px;
+  margin: 15px 20px;
+  background-color: black;
+}
+
+.addresses{
+  display: flex;
+  width: 1000px;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.addresses div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*  Footer Section Styles  */
+footer.contact{
+  height: 200px;
 }
