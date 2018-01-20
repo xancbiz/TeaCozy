@@ -18,6 +18,7 @@ header{
   border-bottom: 1px solid seashell;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
   z-index: 5;
 }
 
@@ -81,14 +82,13 @@ align-self: center;
   flex-wrap: wrap;
 }
 
+
 .teatypes figure img{
   height: 200px;
   width: 300px;
 }
 
-.teatypes figure figcaption{
-  width: 300px;
-}
+
 
 /*  Locations Section Styles  */
 
